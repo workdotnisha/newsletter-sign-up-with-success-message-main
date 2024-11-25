@@ -14,7 +14,9 @@ body{
     justify-content: center;
 }
 input.error{
+    box-shadow: 5px 5px 10px #bd5031 !important;
     border: 2px solid #bd5031 !important;
+    background-color: #f1c1b4;
 }
 input.error::placeholder{
     color: #bd5031;
@@ -113,7 +115,6 @@ ul.custom-bullets {
 }
 
 .thanks-message{
-    /* display: none; */
     background-color: #ffffff;
     margin-top: 1rem;
     font-size: 1rem;
@@ -152,7 +153,7 @@ ul.custom-bullets {
     .container{
         background-color: #ffffff;
         flex-direction: row-reverse;
-        border-radius: 0.6rem;
+        border-radius: 2rem;
     }
     .image{
         background: url('assets/images/illustration-sign-up-desktop.svg');
@@ -160,7 +161,7 @@ ul.custom-bullets {
         height: 600px;
         background-size: cover;
         margin: 1rem;
-        border-radius: 0.6rem;
+        border-radius: 2rem;
     }
     .content{
         width: 50%;
