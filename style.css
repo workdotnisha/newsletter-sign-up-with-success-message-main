@@ -7,11 +7,17 @@
 body{
     font-family: "Roboto", sans-serif;
 }
-#form{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+input.error{
+    border: 2px solid #bd5031 !important;
+}
+input.error::placeholder{
+    color: #bd5031;
 }
 .image{
     background: url('assets/images/illustration-sign-up-mobile.svg');
@@ -98,8 +104,12 @@ ul.custom-bullets {
     border-radius: 0.4rem;
     cursor: pointer;
 }
+.hide{
+    display: none;
+}
 #subscribe:hover{
     background-color:#30313b ;
+    transition: 0.3s ease-in-out;
 }
 
 .thanks-message{
@@ -139,7 +149,7 @@ ul.custom-bullets {
         background-color: #36384D;
         padding: 3rem;
     }
-    #form{
+    .container{
         background-color: #ffffff;
         flex-direction: row-reverse;
         border-radius: 0.6rem;
@@ -179,7 +189,7 @@ ul.custom-bullets {
     body{
         padding: 10rem;
     }
-    #form{
+    .container{
         width: 60%;
         margin: 1rem auto;
     }
